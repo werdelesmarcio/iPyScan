@@ -1,0 +1,8 @@
+version: 1.0.{build}
+image:
+- Ubuntu1804
+- Ubuntu
+build:
+  verbosity: minimal
+test_script:
+- sh: python3 PyTCPScan.py google.com.br 1 100
