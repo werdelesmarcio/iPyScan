@@ -87,7 +87,7 @@ Inicie a aplicação. _Para executar a aplicação deve passar o argumento com o
 ```
 
 ## Screenshot
-![Example](images/Capture01.png)
+![Example](images/Screenshot.png)
 
 
 ## Melhorias
