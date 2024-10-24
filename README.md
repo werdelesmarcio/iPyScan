@@ -36,12 +36,12 @@ O sistema está na versão 1.3 _(beta)_ e ainda encontra-se em fase de desenvolv
 ## Funcionalidades
 Estas são as instruções para obter uma cópia do iPyScan em sua máquina para fins de desenvolvimento ou uso:
 
-1- Faça o download ou clone o repositório em sua máquina e descompacte-o no local de sua preferência.
+1. Faça o download ou clone o repositório em sua máquina e descompacte-o no local de sua preferência.
 - Não é necessário instalar o iPyScan.
 - Se for utilizá-lo como executável, lembre-se de conceder permissão de execução (caso esteja usando uma distribuição GNU/Linux).
 - O sistema foi ajustado para garantir funcionalidade multiplataforma.
 
-2- Para executar o projeto, atente-se às seguintes dependências:
+2. Para executar o projeto, atente-se às seguintes dependências:
 - Ter o interpretador Python, versão 3.xx, e o pip3 instalados em sua máquina.
 - Instalar as dependências listadas no arquivo requirements.txt.
 - Se estiver utilizando uma distribuição Linux, recomenda-se realizar o update e o upgrade do sistema antes de rodar o projeto.
@@ -51,7 +51,7 @@ Estas são as instruções para obter uma cópia do iPyScan em sua máquina para
 _Para dar permissão de execução._
 
 ```bash
-#: > sudo chmod +x pytcpscan.py
+  #: > sudo chmod +x ipyscan.py
 ```
 
 ## Rodando localmente
@@ -83,11 +83,32 @@ Inicie a aplicação. _Para executar a aplicação deve passar o argumento com o
 
 **Windows**
 ```powershell
-$: > python3 ipyscan.py [target] [init_port] [final_port]
+  $: > python3 ipyscan.py [target] [init_port] [final_port]
 ```
 
-## Exemplo de Resposta
+## Screenshot
 ![Example](images/Capture01.png)
+
+
+## Melhorias
+
+1. Modularização por responsabilidade: Cada módulo contém funções que desempenham tarefas específicas:
+  - banner.py: Apenas exibe o banner.
+  - input_validation.py: Valida os argumentos de entrada.
+  - network_utils.py: Funções relacionadas a redes (conexão e resolução de nomes).
+  - port_scanner.py: Função que executa o loop de escaneamento.
+
+2. Facilidade de manutenção: Agora o código está dividido em partes menores e mais fáceis de gerenciar. Se houver alguma mudança na lógica de rede, por exemplo, ela ficará confinada ao arquivo network_utils.py.
+
+3. Reuso de código: Caso queira usar o código de conexão em outro projeto, basta importar o módulo adequado (network_utils) sem precisar alterar o código principal.
+
+4. Legibilidade: Com funções bem definidas e módulos organizados, o código se torna mais legível e fácil de entender para outras pessoas que venham trabalhar nele.
+
+Agora, cada arquivo é responsável por uma parte do código, o que melhora bastante a organização do projeto!
+
+## Licença
+Este projeto está sob Licença GPL-3.0. Para mais informações, consulte a documentação de licença no link abaixo.
+* [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
 
 ## Autores
 **Werdeles Soares** _(gh05tb0y)_: _Desenvolvedor_
@@ -96,29 +117,8 @@ $: > python3 ipyscan.py [target] [init_port] [final_port]
 Se quiser entrar em contato, crie um **issue** no GitHub ou envie um e-mail para gh05tb0y@disroot.org. Obrigado!
 Usuário do github: [@werdelesmarcio](https://github.com/werdelesmarcio) 
 
-## Licença
-Este projeto está sob Licença GPL-3.0. Para mais informações, consulte a documentação de licença no link abaixo.
-* [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
 
-## Detalhes das mudanças:
-
-1- *Modularização por responsabilidade*: Cada módulo contém funções que desempenham tarefas específicas:
-  * _banner.py_: Apenas exibe o banner.
-  * _input_validation.py_: Valida os argumentos de entrada.
-  * _network_utils.py_: Funções relacionadas a redes (conexão e resolução de nomes).
-  * _port_scanner.py_: Função que executa o loop de escaneamento.
-
-2- *Facilidade de manutenção*: Agora o código está dividido em partes menores e mais fáceis de gerenciar. Se houver alguma mudança na lógica de rede, por exemplo, ela ficará confinada ao arquivo _network_utils.py_.
-
-3- *Reuso de código*: Caso queira usar o código de conexão em outro projeto, basta importar o módulo adequado (network_utils) sem precisar alterar o código principal.
-
-4- *Legibilidade*: Com funções bem definidas e módulos organizados, o código se torna mais legível e fácil de entender para outras pessoas que venham trabalhar nele.
-
-Agora, cada arquivo é responsável por uma parte do código, o que melhora bastante a organização do projeto!
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/werdelesmarcio/iPyScan?style=for-the-badge">   <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/werdelesmarcio/iPyScan?style=for-the-badge">
 
 
-<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/werdelesmarcio/PyTCPScan3?style=for-the-badge">   <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/werdelesmarcio/PyTCPScan3?style=for-the-badge">
-
-
-<img src = "https://github.com/werdelesmarcio/PyTCPScan2/blob/master/Images/SoftwareLivre.png?raw=true" width =120 align="Right">
-<img src = "https://github.com/werdelesmarcio/PyTCPScan2/blob/master/Images/PoweredByLinux.png?raw=true" width =80 align="Right">
+<img src = "https://static.wikia.nocookie.net/lpunb/images/b/b1/Logo_Python.png/revision/latest?cb=20130301171443)?raw=true" width =120 align="Right">
