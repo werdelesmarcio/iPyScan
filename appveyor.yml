@@ -5,4 +5,4 @@ image:
 build:
   verbosity: minimal
 test_script:
-- sh: python3 PyTCPScan.py google.com.br 1 100
+- sh: python3 ipyscan.py google.com.br 1 100
