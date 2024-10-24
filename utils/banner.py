@@ -12,22 +12,12 @@ def banner():
     os.system('cls' if os.name == 'nt' else 'clear') # Limpa a tela
     print(Fore.RED + 
           """
-           _  _____          _____                    
-          (_)|  __ \        / ____|                   
-           _ | |__) |_   _ | (___    ___  __ _  _ __  
-          | ||  ___/| | | | \___ \  / __|/ _` || '_ \ 
-          | || |    | |_| | ____) || (__| (_| || | | |
-          |_||_|     \__, ||_____/  \___|\__,_||_| |_|
-                      __/ |                           
-                     |___/                            
-        """
-        + Fore.RESET + 
-                
-        """ 
-                          Welcome to iPyScan Ver.: 1.3    
-                          By: Werdeles Soares \033[31m(gh05tb0y)\033[0;0m    
-                          E-Mail: gh05tb0y@disroot.org         
-        """ )
+                          Welcome to iPyScan Ver.: 1.0.28    
+                          By: Werdeles Soares (gh05tb0y)    
+                          E-Mail: gh05tb0y@disroot.org
+---------------------------------------------------------
+          """
+        + Fore.RESET)
 
 
 
