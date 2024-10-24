@@ -125,10 +125,9 @@ Um salve para todos os que contribuem com o projeto.
 | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/37408291?s=48&v=4" width=115><br><sub>Matheus Oliveira</sub>](https://github.com/matholiveira91) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/50581401?v=4" width=115><br><sub>Ronayrton</sub>](https://github.com/ronayrton) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/186219541?v=4" width=115><br><sub>Fabi Gonçalves</sub>](https://github.com/fabi-goncalves) |
 | :---: | :---: | :---: |
 
-- [@matholiveira91](https://www.github.com/matholiveira91)
-
 ## Autores
-- [@werdelesmarcio](https://www.github.com/werdelesmarcio)
+
+[<img loading="lazy" src="https://avatars.githubusercontent.com/u/36682515?v=4" width=115><br><sub>Werdeles Soares</sub>](https://github.com/werdelesmarcio)
 
 ### Contatos
 Se quiser entrar em contato, crie um **issue** no GitHub ou envie um e-mail para gh05tb0y@disroot.org. Obrigado!
