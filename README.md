@@ -122,7 +122,7 @@ Este projeto está sob Licença GPL-3.0. Para mais informações, consulte a doc
 ## Contribuidores
 Um salve para todos os que contribuem com o projeto.
 
-| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/37408291?s=48&v=4" width=115><br><sub>Matheus Oliveira</sub>](https://github.com/matholiveira91) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/50581401?v=4" width=115><br><sub>Ronayrton</sub>](https://github.com/ronayrton) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/8989346?v=4" width=115><br><sub>Alex Felipe</sub>](https://github.com/alexfelipe) |
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/37408291?s=48&v=4" width=115><br><sub>Matheus Oliveira</sub>](https://github.com/matholiveira91) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/50581401?v=4" width=115><br><sub>Ronayrton</sub>](https://github.com/ronayrton) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/186219541?v=4" width=115><br><sub>Fabi Gonçalves</sub>](https://github.com/fabi-goncalves) |
 | :---: | :---: | :---: |
 
 - [@matholiveira91](https://www.github.com/matholiveira91)
