@@ -1,7 +1,12 @@
 
 ![Logo](images/iPyScan.png)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/925e54560e6c95a08675/maintainability)](https://codeclimate.com/github/werdelesmarcio/iPyScan/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/925e54560e6c95a08675/maintainability)](https://codeclimate.com/github/werdelesmarcio/iPyScan/maintainability) [![Build status](https://ci.appveyor.com/api/projects/status/6136rh47g98a8cje?svg=true)](https://ci.appveyor.com/project/werdelesmarcio/ipyscan)
+
+
+
+
+
  [![Build status](https://ci.appveyor.com/api/projects/status/050o62vq1v03wv4c?svg=true)](https://ci.appveyor.com/project/werdelesmarcio/pytcpscan3)  [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_PyTCPScan3&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_PyTCPScan3)   [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_PyTCPScan3&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_PyTCPScan3)   [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_PyTCPScan3&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_PyTCPScan3)   ![GitHub License](https://img.shields.io/github/license/werdelesmarcio/PyTCPScan3)
 
 
