@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# iPyScan Version 1.3 (Alfa)
+# iPyScan Version 1.0 (Alfa)
 
 # Imports necessários para a execução do software
 import sys
