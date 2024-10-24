@@ -2,9 +2,6 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/925e54560e6c95a08675/maintainability)](https://codeclimate.com/github/werdelesmarcio/iPyScan/maintainability) [![Build status](https://ci.appveyor.com/api/projects/status/6136rh47g98a8cje?svg=true)](https://ci.appveyor.com/project/werdelesmarcio/ipyscan) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_iPyScan&metric=bugs)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_iPyScan) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_iPyScan&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_iPyScan) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_iPyScan&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_iPyScan) ![GitHub License](https://img.shields.io/github/license/werdelesmarcio/PyTCPScan3) ![GitHub commits since latest release](https://img.shields.io/github/commits-since/werdelesmarcio/iPyScan/latest) ![GitHub contributors](https://img.shields.io/github/contributors/werdelesmarcio/iPyScan)
 
-
-
-
 # iPyScan (Version 1.0.26)
 
 Trata-se de uma aplicação voltada principalmente para sistemas **GNU/Linux** _(embora o interpretador Python 3 no Windows também execute a aplicação normalmente)_, com o objetivo de realizar a varredura de portas. A aplicação verifica quais portas estão abertas em um intervalo de portas fornecido por argumentos, retornando **OPEN** em caso positivo.
@@ -121,12 +118,6 @@ Este projeto está sob Licença GPL-3.0. Para mais informações, consulte a doc
 ## Contribuidores
 Um salve para todos os que contribuem com o projeto.
 
-| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/37408291?s=48&v=4" width=115><br><sub>Matheus Oliveira</sub>](https://github.com/matholiveira91) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/50581401?v=4" width=115><br><sub>Ronayrton</sub>](https://github.com/ronayrton) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/186219541?v=4" width=115><br><sub>Fabi Gonçalves</sub>](https://github.com/fabi-goncalves) |
-| :---: | :---: | :---: |
-
-## Autores
-
-[<img loading="lazy" src="https://avatars.githubusercontent.com/u/36682515?v=4" width=115><br><sub>Werdeles Soares</sub>](https://github.com/werdelesmarcio)
 
 ### Contatos
 Se quiser entrar em contato, crie um **issue** no GitHub ou envie um e-mail para gh05tb0y@disroot.org. Obrigado!
