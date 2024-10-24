@@ -4,8 +4,8 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/bf596a2940ddf3183bab/maintainability)](https://codeclimate.com/github/werdelesmarcio/PyTCPScan3/maintainability) [![Build status](https://ci.appveyor.com/api/projects/status/050o62vq1v03wv4c?svg=true)](https://ci.appveyor.com/project/werdelesmarcio/pytcpscan3)  [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_PyTCPScan3&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_PyTCPScan3)   [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_PyTCPScan3&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_PyTCPScan3)   [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_PyTCPScan3&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_PyTCPScan3)   ![GitHub License](https://img.shields.io/github/license/werdelesmarcio/PyTCPScan3)
 
 
-# PyTCPScan (Version 3.0)
-_Repositório para a aplicação PyTCPScan._
+# iPyScan (Version 1.3)
+_Repositório para a aplicação iPyScan._
 
 ```
                    GNU GENERAL PUBLIC LICENSE
@@ -30,7 +30,7 @@ any other work released this way by its authors.  You can apply it to
 your programs, too.
 ```
 
-Consiste em uma aplicação voltada para principalmente para sistemas **GNU/Linux** _(embora o interpretador python3 no windows também execute a aplicação normalmente)_ e tem como finalidade, a execução de scanner de portas, onde irá verificar quais portas estão abertas dentro de um range de portas informados por argumentos e retornar **STATUS OPEN**, em caso positivo. 
+Consiste em uma aplicação voltada para principalmente para sistemas **GNU/Linux** _(embora o interpretador python3 no windows também execute a aplicação normalmente)_ e tem como finalidade, a execução de scanner de portas, onde irá verificar quais portas estão abertas dentro de um range de portas informados por argumentos e retornar **OPEN**, em caso positivo. 
 
 Os argumentos informados consistem no endereço de host ou IP do alvo que será analisado, seguidos do range de portas inicial e final.
 
@@ -39,7 +39,7 @@ Os argumentos informados consistem no endereço de host ou IP do alvo que será 
 ## Estrutura do projeto:
 
 ```
-pyTCPScan/
+iPyScan/
 │
 ├── utils/
 │   ├── __init__.py          # Torna utils um pacote Python
@@ -55,10 +55,10 @@ pyTCPScan/
 └── README.md                # Descrição do projeto (opcional)
 ```
 
-O sistema está na versão 3.1 _(beta)_ e ainda encontra-se em fase de desenvolvimento.
+O sistema está na versão 1.3 _(beta)_ e ainda encontra-se em fase de desenvolvimento.
 
 ## Funcionalidades
-Estas são as instruções para que você tenha uma cópia do **PyTCPScan** em sua máquina para fins de desenvolvimento e teste.
+Estas são as instruções para que você tenha uma cópia do **iPyScan** em sua máquina para fins de desenvolvimento e teste.
 Execute o download ou clone o repositório para a sua máquina e descompacte-o em um local de preferência.
 
 - _Não é necessário instalar o PyTCPScan._
@@ -95,7 +95,7 @@ $: > python3 pytcpscan.py [target] [init_port] [final_port]
 ```
 
 ## Exemplo de Resposta
-<img src="https://i.imgur.com/iI9ncVh.png">
+![Example](images/Capture01.png)
 
 ## Autores
 **Werdeles (gh05tb0y) Soares:** _Desenvolvedor_
