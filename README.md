@@ -1,10 +1,6 @@
-
 ![Logo](images/iPyScan.png)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/925e54560e6c95a08675/maintainability)](https://codeclimate.com/github/werdelesmarcio/iPyScan/maintainability) [![Build status](https://ci.appveyor.com/api/projects/status/6136rh47g98a8cje?svg=true)](https://ci.appveyor.com/project/werdelesmarcio/ipyscan) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_iPyScan&metric=bugs)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_iPyScan) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_iPyScan&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_iPyScan) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_iPyScan&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_iPyScan) ![GitHub License](https://img.shields.io/github/license/werdelesmarcio/PyTCPScan3) ![GitHub commits since latest release](https://img.shields.io/github/commits-since/werdelesmarcio/iPyScan/latest) ![GitHub contributors](https://img.shields.io/github/contributors/werdelesmarcio/iPyScan)
-
-
-
 
 # iPyScan (Version 1.0.26)
 
@@ -121,10 +117,7 @@ Este projeto está sob Licença GPL-3.0. Para mais informações, consulte a doc
 
 ## Contribuidores
 Um salve para todos os que contribuem com o projeto.
-- [@matholiveira91](https://www.github.com/matholiveira91)
 
-## Autores
-- [@werdelesmarcio](https://www.github.com/werdelesmarcio)
 
 ### Contatos
 Se quiser entrar em contato, crie um **issue** no GitHub ou envie um e-mail para gh05tb0y@disroot.org. Obrigado!
