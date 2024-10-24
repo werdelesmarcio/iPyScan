@@ -16,9 +16,7 @@ def banner():
                           By: Werdeles Soares (gh05tb0y)    
                           E-Mail: gh05tb0y@disroot.org
           """
-        + Fore.RESET + 
-                                                   
-        """ )
+        + Fore.RESET)
 
 
 
