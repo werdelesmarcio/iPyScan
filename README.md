@@ -10,7 +10,7 @@
  [![Build status](https://ci.appveyor.com/api/projects/status/050o62vq1v03wv4c?svg=true)](https://ci.appveyor.com/project/werdelesmarcio/pytcpscan3)  [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_PyTCPScan3&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_PyTCPScan3)   [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_PyTCPScan3&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_PyTCPScan3)   [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_PyTCPScan3&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_PyTCPScan3)   ![GitHub License](https://img.shields.io/github/license/werdelesmarcio/PyTCPScan3)
 
 
-# iPyScan (Version 1.3)
+# iPyScan (Version 1.0.2)
 
 Trata-se de uma aplicação voltada principalmente para sistemas **GNU/Linux** _(embora o interpretador Python 3 no Windows também execute a aplicação normalmente)_, com o objetivo de realizar a varredura de portas. A aplicação verifica quais portas estão abertas em um intervalo de portas fornecido por argumentos, retornando **OPEN** em caso positivo.
 
@@ -37,7 +37,7 @@ iPyScan/
 └── README.md                # Descrição do projeto (opcional)
 ```
 
-O sistema está na versão 1.3 _(beta)_ e ainda encontra-se em fase de desenvolvimento.
+O sistema está na versão 1.0.2 _(beta)_ e ainda encontra-se em fase de desenvolvimento.
 
 ## Funcionalidades
 Estas são as instruções para obter uma cópia do iPyScan em sua máquina para fins de desenvolvimento ou uso:
