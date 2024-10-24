@@ -5,36 +5,12 @@
 
 
 # iPyScan (Version 1.3)
-_Repositório para a aplicação iPyScan._
 
-```
-                   GNU GENERAL PUBLIC LICENSE
-                       Version 3, 29 June 2007
+Trata-se de uma aplicação voltada principalmente para sistemas **GNU/Linux** _(embora o interpretador Python 3 no Windows também execute a aplicação normalmente)_, com o objetivo de realizar a varredura de portas. A aplicação verifica quais portas estão abertas em um intervalo de portas fornecido por argumentos, retornando **OPEN** em caso positivo.
 
- Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
- Everyone is permitted to copy and distribute verbatim copies
- of this license document, but changing it is not allowed.
+Os argumentos fornecidos consistem no endereço do host ou IP do alvo a ser analisado, seguido do intervalo de portas inicial e final.
 
-                            Preamble
-
-  The GNU General Public License is a free, copyleft license for
-software and other kinds of works.
-
-  The licenses for most software and other practical works are designed
-to take away your freedom to share and change the works.  By contrast,
-the GNU General Public License is intended to guarantee your freedom to
-share and change all versions of a program--to make sure it remains free
-software for all its users.  We, the Free Software Foundation, use the
-GNU General Public License for most of our software; it applies also to
-any other work released this way by its authors.  You can apply it to
-your programs, too.
-```
-
-Consiste em uma aplicação voltada para principalmente para sistemas **GNU/Linux** _(embora o interpretador python3 no windows também execute a aplicação normalmente)_ e tem como finalidade, a execução de scanner de portas, onde irá verificar quais portas estão abertas dentro de um range de portas informados por argumentos e retornar **OPEN**, em caso positivo. 
-
-Os argumentos informados consistem no endereço de host ou IP do alvo que será analisado, seguidos do range de portas inicial e final.
-
-**OBS.: Se sua meta é de escanear apenas uma porta, pode colocar o mesmo valor para os dois ultimos parâmetros.**
+**OBS.: Se o objetivo for escanear apenas uma porta, basta fornecer o mesmo valor para os dois últimos parâmetros.**
 
 ## Estrutura do projeto:
 
@@ -58,20 +34,17 @@ iPyScan/
 O sistema está na versão 1.3 _(beta)_ e ainda encontra-se em fase de desenvolvimento.
 
 ## Funcionalidades
-Estas são as instruções para que você tenha uma cópia do **iPyScan** em sua máquina para fins de desenvolvimento e teste.
-Execute o download ou clone o repositório para a sua máquina e descompacte-o em um local de preferência.
+Estas são as instruções para obter uma cópia do iPyScan em sua máquina para fins de desenvolvimento ou uso:
 
-- _Não é necessário instalar o PyTCPScan._
-- _Para usar como executável, lembrar de dar permissão de execução (caso esteja usando uma Distribuição GNU/Linux)._
-- _Alterações no sistema para funcionalidade multiplataforma._
+1- Faça o download ou clone o repositório em sua máquina e descompacte-o no local de sua preferência.
+- Não é necessário instalar o iPyScan.
+- Se for utilizá-lo como executável, lembre-se de conceder permissão de execução (caso esteja usando uma distribuição GNU/Linux).
+- O sistema foi ajustado para garantir funcionalidade multiplataforma.
 
-## Pré-Requisitos
-
-Para rodar esse projeto, você vai precisar se atentar às dependências abaixo:
-
-- Ter instalado em sua máquina o interpretador python na versão 3.xx e o pip3.
-- Se estiver rodando uma distro linux, fazer o update e upgrade do sistema antes de rodar.
-
+2- Para executar o projeto, atente-se às seguintes dependências:
+- Ter o interpretador Python, versão 3.xx, e o pip3 instalados em sua máquina.
+- Instalar as dependências listadas no arquivo requirements.txt.
+- Se estiver utilizando uma distribuição Linux, recomenda-se realizar o update e o upgrade do sistema antes de rodar o projeto.
 
 ## Permissões (usuários GNU/Linux)
 
@@ -80,28 +53,47 @@ _Para dar permissão de execução._
 ```bash
 #: > sudo chmod +x pytcpscan.py
 ```
-    
-## Execução
 
-_Para executar a aplicação deve passar o argumento com o host do alvo, a porta inicial e a porta final. Ele irá verificar quais portas estão com o Status Open._
+## Rodando localmente
 
-**GNU/Linux**
+Clone o projeto
+
 ```bash
-$: > ./pytcpscan [target] [init_port] [final_port]
+  git clone https://github.com/werdelesmarcio/iPyScan.git
 ```
+
+Entre no diretório do projeto
+
+```bash
+  cd iPyScan
+```
+
+Instale as dependências
+
+```bash
+  pip3 install requirements.txt
+```
+
+Inicie a aplicação. _Para executar a aplicação deve passar o argumento com o host do alvo, a porta inicial e a porta final. Ele irá verificar quais portas estão com o Status Open._
+
+**Linux**
+```bash
+  $: > ./ipyscan [target] [init_port] [final_port]
+```
+
 **Windows**
 ```powershell
-$: > python3 pytcpscan.py [target] [init_port] [final_port]
+$: > python3 ipyscan.py [target] [init_port] [final_port]
 ```
 
 ## Exemplo de Resposta
 ![Example](images/Capture01.png)
 
 ## Autores
-**Werdeles (gh05tb0y) Soares:** _Desenvolvedor_
+**Werdeles Soares** _(gh05tb0y)_: _Desenvolvedor_
 
 ### Contatos
-Se quiser entrar em contato, crie um **issue** no GitHub ou envie um e-mail para werdelesmarcio@gmail.com. Obrigado!
+Se quiser entrar em contato, crie um **issue** no GitHub ou envie um e-mail para gh05tb0y@disroot.org. Obrigado!
 Usuário do github: [@werdelesmarcio](https://github.com/werdelesmarcio) 
 
 ## Licença
