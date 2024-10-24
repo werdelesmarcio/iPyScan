@@ -12,9 +12,10 @@ def banner():
     os.system('cls' if os.name == 'nt' else 'clear') # Limpa a tela
     print(Fore.RED + 
           """
-                          Welcome to iPyScan Ver.: 1.3    
+                          Welcome to iPyScan Ver.: 1.0.28    
                           By: Werdeles Soares (gh05tb0y)    
                           E-Mail: gh05tb0y@disroot.org
+---------------------------------------------------------
           """
         + Fore.RESET)
 

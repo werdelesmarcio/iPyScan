@@ -1,10 +1,12 @@
 
 ![Logo](images/iPyScan.png)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/925e54560e6c95a08675/maintainability)](https://codeclimate.com/github/werdelesmarcio/iPyScan/maintainability) [![Build status](https://ci.appveyor.com/api/projects/status/6136rh47g98a8cje?svg=true)](https://ci.appveyor.com/project/werdelesmarcio/ipyscan) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_iPyScan&metric=bugs)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_iPyScan) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_iPyScan&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_iPyScan) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_iPyScan&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_iPyScan) ![GitHub License](https://img.shields.io/github/license/werdelesmarcio/PyTCPScan3)
+[![Maintainability](https://api.codeclimate.com/v1/badges/925e54560e6c95a08675/maintainability)](https://codeclimate.com/github/werdelesmarcio/iPyScan/maintainability) [![Build status](https://ci.appveyor.com/api/projects/status/6136rh47g98a8cje?svg=true)](https://ci.appveyor.com/project/werdelesmarcio/ipyscan) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_iPyScan&metric=bugs)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_iPyScan) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_iPyScan&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_iPyScan) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_iPyScan&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_iPyScan) ![GitHub License](https://img.shields.io/github/license/werdelesmarcio/PyTCPScan3) ![GitHub commits since latest release](https://img.shields.io/github/commits-since/werdelesmarcio/iPyScan/latest) ![GitHub contributors](https://img.shields.io/github/contributors/werdelesmarcio/iPyScan)
 
 
-# iPyScan (Version 1.0.2)
+
+
+# iPyScan (Version 1.0.26)
 
 Trata-se de uma aplicação voltada principalmente para sistemas **GNU/Linux** _(embora o interpretador Python 3 no Windows também execute a aplicação normalmente)_, com o objetivo de realizar a varredura de portas. A aplicação verifica quais portas estão abertas em um intervalo de portas fornecido por argumentos, retornando **OPEN** em caso positivo.
 
@@ -87,7 +89,7 @@ Inicie a aplicação. _Para executar a aplicação deve passar o argumento com o
 ```
 
 ## Screenshot
-![Example](images/Capture01.png)
+![Example](images/Screenshot.png)
 
 
 ## Melhorias
@@ -110,12 +112,22 @@ Agora, cada arquivo é responsável por uma parte do código, o que melhora bast
 Este projeto está sob Licença GPL-3.0. Para mais informações, consulte a documentação de licença no link abaixo.
 * [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
 
+## Como contribuir para o projeto
+
+1. Faça um fork do projeto.
+2. Crie uma nova branch com as suas alterações ```git checkout -b my-feature ```.
+3. Salve as alterações e crie uam mensagem de commit contado quais alterações foram executadas: ```git commit -m "Feature: My features.```.
+4. Envie as alterações: ```git push origin my-feature```.
+
+## Contribuidores
+Um salve para todos os que contribuem com o projeto.
+- [@matholiveira91](https://www.github.com/matholiveira91)
+
 ## Autores
-**Werdeles Soares** _(gh05tb0y)_: _Desenvolvedor_
+- [@werdelesmarcio](https://www.github.com/werdelesmarcio)
 
 ### Contatos
 Se quiser entrar em contato, crie um **issue** no GitHub ou envie um e-mail para gh05tb0y@disroot.org. Obrigado!
-Usuário do github: [@werdelesmarcio](https://github.com/werdelesmarcio) 
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)]([https://www.linkedin.com/](https://www.linkedin.com/in/werdeles-soares/))
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/werdelesmarcio/iPyScan?style=for-the-badge">   <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/werdelesmarcio/iPyScan?style=for-the-badge">
