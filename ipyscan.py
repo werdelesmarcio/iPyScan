@@ -9,6 +9,8 @@ from utils.banner import banner
 from scanner.input_validation import validate_input
 from scanner.network_utils import resolve_target
 from scanner.port_scanner import scan_ports
+from scanner.udp_scanner import scan_udp_ports  # Novo import
+
 
 def main():
     banner()  # Exibe o banner do sistema
@@ -21,11 +23,21 @@ def main():
     resolved_target = resolve_target(target) # Resolve o IP do endereço da url informada
 
     try:
-        scan_ports(resolved_target, initial_port, final_port) #Função que escaneia o endereço levando em consideração o range de portas informados
-    except KeyboardInterrupt: # Interrupção de execução do sistema
+        scan_type = input("Choose scan type (TCP/UDP): ").strip().upper()
+        
+        if scan_type == "TCP":
+            scan_ports(resolved_target, initial_port, final_port)
+        elif scan_type == "UDP":
+            scan_udp_ports(resolved_target, initial_port, final_port)
+        else:
+            print("Invalid scan type. Choose 'TCP' or 'UDP'.")
+            sys.exit(1)
+
+    except KeyboardInterrupt:
         print('\n You pressed Ctrl+C')
-        print(' The application has been stopped prematurely.\n')
-        sys.exit(1) # Mata a execução
+        print(' The application has been stopped prematurely.')
+        sys.exit(1)
+
 
 if __name__ == '__main__':
     main()
