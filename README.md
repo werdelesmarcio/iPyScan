@@ -96,11 +96,10 @@ Inicie a aplicação. _Para executar a aplicação deve passar o argumento com o
 ## Melhorias
 
 1. Modularização por responsabilidade: Cada módulo contém funções que desempenham tarefas específicas:
-
-- banner.py: Apenas exibe o banner.
-- input_validation.py: Valida os argumentos de entrada.
-- network_utils.py: Funções relacionadas a redes (conexão e resolução de nomes).
-- port_scanner.py: Função que executa o loop de escaneamento.
+  - banner.py: Apenas exibe o banner.
+  - input_validation.py: Valida os argumentos de entrada.
+  - network_utils.py: Funções relacionadas a redes (conexão e resolução de nomes).
+  - port_scanner.py: Função que executa o loop de escaneamento.
 
 2. Facilidade de manutenção: Agora o código está dividido em partes menores e mais fáceis de gerenciar. Se houver alguma mudança na lógica de rede, por exemplo, ela ficará confinada ao arquivo network_utils.py.
 
@@ -116,22 +115,24 @@ Este projeto está sob Licença GPL-3.0. Para mais informações, consulte a doc
 
 - [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
 
-## Contribuidores
-
+## Colaboradores
 Um praise para os cúbicos que contribuíram neste projeto 👏
 
-## Como contribuir para o projeto
+<div align=center>
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/fabi-goncalves"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/186219541?v=4" width="100px;" alt=""/><br /><b>Fabi Gonçalves</b></a><br /><sub>👨‍💻 Colaboradora</sub></td>    
+    <td align="center"><a href="https://github.com/matholiveira91"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/37408291?v=4" width="100px;" alt=""/><br /><b>Matheus Oliveira</b></a><br /><sub>👨‍💻 Colaborador</sub></td>    
+    <td align="center"><a href="https://github.com/ronayrton"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/50581401?v=4" width="100px;" alt=""/><br /><b>Ronayrton</b></a><br /><sub>👨‍💻 Colaborador</sub></td>  
+  </tr>
+</table>
+</div>
 
-1. Faça um **fork** do projeto.
-2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
-3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
-4. Envie as suas alterações: `git push origin my-feature`
+### Como contribuir para o projeto
    > Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](./CONTRIBUTING.md)
 
----
-
 ## Autor
-
+[<img loading="lazy" src="https://avatars.githubusercontent.com/u/36682515?v=4" width=115><br><sub>Werdeles Soares</sub>](https://github.com/werdelesmarcio)
 
 ### Contatos
 
