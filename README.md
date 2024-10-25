@@ -4,8 +4,8 @@
 
 # iPyScan (Version 1.0.26)
 Trata-se de uma aplicação voltada principalmente para sistemas **GNU/Linux** _(embora o interpretador Python 3 no Windows também execute a aplicação normalmente)_, com o objetivo de realizar a varredura de portas. A aplicação verifica quais portas estão abertas em um intervalo de portas fornecido por argumentos, retornando **OPEN** em caso positivo.
-
 Os argumentos fornecidos consistem no endereço do host ou IP do alvo a ser analisado, seguido do intervalo de portas inicial e final.
+   
    > OBS.: Se o objetivo for escanear apenas uma porta, basta fornecer o mesmo valor para os dois últimos parâmetros.
 
 ## Estrutura do projeto:
@@ -29,22 +29,22 @@ iPyScan/
 ## Funcionalidades
 Estas são as instruções para obter uma cópia do iPyScan em sua máquina para fins de desenvolvimento ou uso:
 1. Faça o download ou clone o repositório em sua máquina e descompacte-o no local de sua preferência.
-  - Não é necessário instalar o iPyScan.
-  - Se for utilizá-lo como executável, lembre-se de conceder permissão de execução (caso esteja usando uma distribuição GNU/Linux).
-  - O sistema foi ajustado para garantir funcionalidade multiplataforma.
+   - Não é necessário instalar o iPyScan.
+   - Se for utilizá-lo como executável, lembre-se de conceder permissão de execução (caso esteja usando uma distribuição GNU/Linux).
+   - O sistema foi ajustado para garantir funcionalidade multiplataforma.
 2. Para executar o projeto, atente-se às seguintes dependências:
-  - Ter o interpretador Python, versão 3.xx, e o pip3 instalados em sua máquina.
-  - Instalar as dependências listadas no arquivo requirements.txt.
-  - Se estiver utilizando uma distribuição Linux, recomenda-se realizar o update e o upgrade do sistema antes de rodar o projeto.
+   - Ter o interpretador Python, versão 3.xx, e o pip3 instalados em sua máquina.
+   - Instalar as dependências listadas no arquivo requirements.txt.
+   - Se estiver utilizando uma distribuição Linux, recomenda-se realizar o update e o upgrade do sistema antes de rodar o projeto.
 
 ## Permissões (usuários GNU/Linux)
-```bash
+```powershell
 # Para dar permissão de execução.
 sudo chmod +x ipyscan.py
 ```
 
 ## Rodando localmente
-```bash
+```powershell
 # Clone o projeto
   git clone https://github.com/werdelesmarcio/iPyScan.git
 
@@ -67,18 +67,19 @@ sudo chmod +x ipyscan.py
 
 ## Melhorias
 1. Modularização por responsabilidade: Cada módulo contém funções que desempenham tarefas específicas:
-  - banner.py: Apenas exibe o banner.
-  - input_validation.py: Valida os argumentos de entrada.
-  - network_utils.py: Funções relacionadas a redes (conexão e resolução de nomes).
-  - port_scanner.py: Função que executa o loop de escaneamento.
+   - banner.py: Apenas exibe o banner.
+   - input_validation.py: Valida os argumentos de entrada.
+   - network_utils.py: Funções relacionadas a redes (conexão e resolução de nomes).
+   - port_scanner.py: Função que executa o loop de escaneamento.
 2. Facilidade de manutenção: Agora o código está dividido em partes menores e mais fáceis de gerenciar. Se houver alguma mudança na lógica de rede, por exemplo, ela ficará confinada ao arquivo network_utils.py.
 3. Reuso de código: Caso queira usar o código de conexão em outro projeto, basta importar o módulo adequado (network_utils) sem precisar alterar o código principal.
 4. Legibilidade: Com funções bem definidas e módulos organizados, o código se torna mais legível e fácil de entender para outras pessoas que venham trabalhar nele.
+   
    > Agora, cada arquivo é responsável por uma parte do código, o que melhora bastante a organização do projeto!
 
 ## Licença
 Este projeto está sob Licença GPL-3.0. Para mais informações, consulte a documentação de licença no link abaixo.
-- [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
+   - [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
 
 ## Colaboradores
 Um praise para os cúbicos que contribuíram neste projeto 👏
@@ -94,7 +95,7 @@ Um praise para os cúbicos que contribuíram neste projeto 👏
 </div>
 
 ## Como contribuir para o projeto
-   > Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](./CONTRIBUTING.md)
+Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](./CONTRIBUTING.md)
 
 ## Contatos
 Se quiser entrar em contato, crie um **issue** no GitHub ou envie um e-mail para gh05tb0y@disroot.org. Obrigado!
