@@ -88,8 +88,7 @@ Um praise para os cúbicos que contribuíram neste projeto 👏
   <tr>
     <td align="center"><a href="https://github.com/werdelesmarcio"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/36682515?v=4" width="100px;" alt=""/><br /><b>Werdeles Soares</b></a><br /><sub>💻 Desenvolvedor</sub></td>
     <td align="center"><a href="https://github.com/fabi-goncalves"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/186219541?v=4" width="100px;" alt=""/><br /><b>Fabi Gonçalves</b></a><br /><sub>👨‍💻 Colaboradora</sub></td>    
-    <td align="center"><a href="https://github.com/matholiveira91"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/37408291?v=4" width="100px;" alt=""/><br /><b>Matheus Oliveira</b></a><br /><sub>👨‍💻 Colaborador</sub></td>    
-    <td align="center"><a href="https://github.com/ronayrton"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/50581401?v=4" width="100px;" alt=""/><br /><b>Ronayrton</b></a><br /><sub>👨‍💻 Colaborador</sub></td>  
+    <td align="center"><a href="https://github.com/matholiveira91"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/37408291?v=4" width="100px;" alt=""/><br /><b>Matheus Oliveira</b></a><br /><sub>👨‍💻 Colaborador</sub></td>
   </tr>
 </table>
 </div>
