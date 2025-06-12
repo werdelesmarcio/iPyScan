@@ -16,7 +16,7 @@ Os argumentos fornecidos consistem no endereço do host ou IP do alvo a ser anal
 ```
 PyScan/
 ├── ipyscan/                       # Pacote principal renomeado
-│   ├── main.py                # Permite rodar com python -m ipyscan
+│   ├── main.py                    # Permite rodar com python -m ipyscan
 │   ├── scanner/
 │   │   └── input_validation.py
 │   │   └── network_utils.py
@@ -103,9 +103,8 @@ ipyscan --target 127.0.0.1 --ports 20-80 --threads 100 --output json
 ---
 
 ## 🌐 Licença
-
-Distribuído sob a licença GLP. Veja `LICENSE` para mais informações.
-
+Este projeto está sob Licença GPL-3.0. Para mais informações, consulte a documentação de licença no link abaixo.
+   - [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
 ---
 
 ## 🚀 Contribuição
@@ -114,16 +113,12 @@ Pull requests são bem-vindos! Para grandes mudanças, abra uma issue antes.
 
 ---
 
-> Desenvolvido por [Werdeles Marcio] - 2025
+> Desenvolvido por Werdeles Marcio - 2025
 
 
 ## Screenshot
 ![Example](images/Screenshot.png)
 
-
-## Licença
-Este projeto está sob Licença GPL-3.0. Para mais informações, consulte a documentação de licença no link abaixo.
-   - [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
 
 ## Colaboradores
 Um praise para os cúbicos que contribuíram neste projeto 👏
