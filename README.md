@@ -104,7 +104,7 @@ ipyscan --target 127.0.0.1 --ports 20-80 --threads 100 --output json
 
 ## 🌐 Licença
 
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+Distribuído sob a licença GLP. Veja `LICENSE` para mais informações.
 
 ---
 
