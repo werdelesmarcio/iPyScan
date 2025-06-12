@@ -141,4 +141,4 @@ Se quiser entrar em contato, crie um **issue** no GitHub ou envie um e-mail para
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](<[https://www.linkedin.com/](https://www.linkedin.com/in/werdeles-soares/)>)
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/werdelesmarcio/iPyScan?style=for-the-badge"> <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/werdelesmarcio/iPyScan?style=for-the-badge">
 
-<img src = "https://static.wikia.nocookie.net/lpunb/images/b/b1/Logo_Python.png)?raw=true" width =120 align="Right">
+<img src = "https://static.wikia.nocookie.net/lpunb/images/b/b1/Logo_Python.png" width =120 align="Right">
