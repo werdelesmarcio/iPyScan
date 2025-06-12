@@ -28,8 +28,18 @@ def parse_args():
     Retorna um objeto Namespace com os argumentos analisados.
     """
     parser = argparse.ArgumentParser(
-        description="iPyScan - Scanner de Redes",
-        epilog="Desenvolvido por Werdeles Marcio de C. Soares",
+        prog="iPyScan",
+        description=(
+            "iPyScan - Scanner de portas TCP com banner grabbing e exportação.\n"
+            "Realiza varredura em hosts, identifica serviços e exporta em JSON ou CSV.\n"
+        ),
+        epilog=(
+            "Desenvolvido por Werdeles Marcio de C. Soares"
+            "\nExemplos:\n"
+            "  ipyscan --target 127.0.0.1 --ports 20-80 --output json\n"
+            "  ipyscan --target scanme.nmap.org --ports 1-1000 --threads 200 --output csv\n"
+        ),
+        formatter_class=argparse.RawTextHelpFormatter
     )
     parser.add_argument(
         "--target",
