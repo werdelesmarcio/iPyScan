@@ -4,7 +4,7 @@
 iPyScan Version 1.0 (beta)
 Desenvolvido por: Werdeles Marcio de C. Soares
 E-mail: gh05tb0y@disroot.org
-----------------------------------
+-----------------------------------------------------------------------------
 iPyScan é um software de código aberto para escaneamento de portas TCP.
 Ele foi desenvolvido para fins educacionais e de segurança, permitindo que
 usuários verifiquem quais portas estão abertas em um determinado host
@@ -15,36 +15,76 @@ eficiente.
 
 # Imports necessários para a execução do software
 import sys
+import argparse
 
-# from utils.banner import banner
-from scanner.input_validation import validate_input
+from utils.banner import banner
 from scanner.network_utils import resolve_target, ResolutionError
 from scanner.port_scanner import scan_ports
 
 
-def main():
-    args = validate_input(
-        sys.argv
-    )  # Valida os argumentos informados, se auxentes exibe a mensagem de erro.
-    if not args:
-        sys.exit(1)
+def parse_args():
+    """
+    Função para analisar os argumentos de linha de comando.
+    Retorna um objeto Namespace com os argumentos analisados.
+    """
+    parser = argparse.ArgumentParser(
+        description="iPyScan - Scanner de Redes",
+        epilog="Desenvolvido por Werdeles Marcio de C. Soares",
+    )
+    parser.add_argument(
+        "--target",
+        required=True,
+        help="Hostname ou endereço IP do alvo a ser escaneado.",
+    )
+    parser.add_argument(
+        "--ports",
+        required=True,
+        help="Intervalo de portas (ex.: 20-80).",
+    )
+    parser.add_argument(
+        "--threads",
+        default=100,
+        type=int,
+        help="Número de threads (defaut: 100).",
+    )
+    parser.add_argument(
+        "--output",
+        choices=["json", "csv"],
+        default="json",
+        help="Formato de saída (json ou csv, default: json).",
+    )
+    return parser.parse_args()
 
-    target, initial_port, final_port = args  # Desempacota os argumentos validados
+
+def main():
+    banner()  # Exibe o banner do software
+    args = (
+        parse_args()
+    )  # Valida os argumentos informados, se auxentes exibe a mensagem de erro.
 
     try:
-        resolved_target = resolve_target(target)
+        resolved_target = resolve_target(args.target)
     except ResolutionError as e:  # Captura erros de resolução de hostname
         print(e)
         sys.exit(1)
 
     try:
-        scan_ports(
-            resolved_target, initial_port, final_port
-        )  # Função que escaneia o endereço levando em consideração o range de portas informados
-    except KeyboardInterrupt:  # Interrupção de execução do sistema
-        print("\n You pressed Ctrl+C")
-        print(" The application has been stopped prematurely.\n")
-        sys.exit(1)  # Mata a execução
+        port_range = args.ports.split("-")
+        initial_port = int(port_range[0])
+        final_port = int(port_range[1])
+        if not (0 <= initial_port <= 65535 and 0 <= final_port <= 65535):
+            raise ValueError("Portas devem estar entre 0 e 65535.")
+    except ValueError as e:  # Captura erros de conversão de portas
+        print(f"Erro ao processar o intervalo de portas: {e}")
+        sys.exit(1)
+
+    scan_ports(
+        target=resolved_target,
+        initial_port=initial_port,
+        final_port=final_port,
+        max_threads=args.threads,
+        output_format=args.output,
+    )
 
 
 if __name__ == "__main__":

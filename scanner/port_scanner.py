@@ -4,7 +4,7 @@ from scanner.network_utils import connect, grab_banner
 from utils.exporter import export_results
 
 
-def scan_ports(target, initial_port, final_port, max_threads=100):
+def scan_ports(target, initial_port, final_port, max_threads=100, output_format="json"):
     print(f" [*] Connecting to Target: {target}")
     print(f" [*] Scanning ports between {initial_port} and {final_port}...")
     print(f" [!] Please wait, scanning remote host: \033[1;33m{target}\033[m")
