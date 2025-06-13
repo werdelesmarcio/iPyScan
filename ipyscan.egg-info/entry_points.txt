@@ -1,2 +1,2 @@
 [console_scripts]
-ipyscan = ipyscan.__main__:ipyscan
+ipyscan = ipyscan.__main__:main

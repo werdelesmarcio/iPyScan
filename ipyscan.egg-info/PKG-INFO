@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: ipyscan
-Version: 1.0.29
+Version: 1.0.30
 Summary: Scanner de portas TCP com banner grabbing
 Author: gh05tb0y (Werdeles Soares)
 Author-email: gh05tb0y@disroot.org
@@ -15,7 +15,7 @@ Dynamic: license-file
 
 ![Logo](images/iPyScan.png)
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/werdelesmarcio/iPyScan/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/werdelesmarcio/iPyScan/tree/main) [![Maintainability](https://api.codeclimate.com/v1/badges/925e54560e6c95a08675/maintainability)](https://codeclimate.com/github/werdelesmarcio/iPyScan/maintainability) [![Build status](https://ci.appveyor.com/api/projects/status/6136rh47g98a8cje?svg=true)](https://ci.appveyor.com/project/werdelesmarcio/iPyScan) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_iPyScan&metric=bugs)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_iPyScan) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_iPyScan&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_iPyScan) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_iPyScan&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_iPyScan) ![GitHub License](https://img.shields.io/github/license/werdelesmarcio/iPyScan) ![GitHub commits since latest release](https://img.shields.io/github/commits-since/werdelesmarcio/iPyScan/latest)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/werdelesmarcio/iPyScan/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/werdelesmarcio/iPyScan/tree/main) [![Maintainability](https://api.codeclimate.com/v1/badges/925e54560e6c95a08675/maintainability)](https://codeclimate.com/github/werdelesmarcio/iPyScan/maintainability) [![Maintainability](https://qlty.sh/badges/beb7760c-f6d8-44dd-81b8-46af7197b2af/maintainability.svg)](https://qlty.sh/gh/werdelesmarcio/projects/iPyScan) [![Build status](https://ci.appveyor.com/api/projects/status/6136rh47g98a8cje?svg=true)](https://ci.appveyor.com/project/werdelesmarcio/iPyScan) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_iPyScan&metric=bugs)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_iPyScan) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_iPyScan&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_iPyScan) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_iPyScan&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_iPyScan) ![GitHub License](https://img.shields.io/github/license/werdelesmarcio/iPyScan) ![GitHub commits since latest release](https://img.shields.io/github/commits-since/werdelesmarcio/iPyScan/latest)
 
 # iPyScan
 
@@ -67,7 +67,7 @@ PyScan/
 ## 📦 Instalação local
 
 ```bash
-git clone https://github.com/seu-usuario/ipyscan.git
+git clone https://github.com/werdelesmarcio/ipyscan.git
 cd ipyscan
 pip install .
 ```
@@ -109,11 +109,11 @@ ipyscan --target 127.0.0.1 --ports 20-80 --threads 100 --output json
 ---
 
 ## 💡 Roadmap de melhorias
-
 - [x] Banner grabbing com heurísticas por porta
 - [x] Testes automatizados com `unittest`
 - [x] Exportação JSON/CSV
 - [x] Ajuda CLI detalhada com `--help`
+- [x] Banner seguro com `subprocess`
 - [ ] Scan UDP
 - [ ] Modo silencioso `--quiet`
 - [ ] Interface web (Flask ou GUI)
