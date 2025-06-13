@@ -53,7 +53,7 @@ PyScan/
 ## 📦 Instalação local
 
 ```bash
-git clone https://github.com/seu-usuario/ipyscan.git
+git clone https://github.com/werdelesmarcio/ipyscan.git
 cd ipyscan
 pip install .
 ```
