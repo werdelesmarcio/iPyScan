@@ -27,7 +27,7 @@ def banner():
     print(
         Fore.GREEN
         + """
-Welcome to iPyScan v. 1.0.28. Date: """
+Welcome to iPyScan v. 1.0.29. Date: """
         + data.strftime("%d/%m/%Y")
         + """   
 Developed by: gh05tb0y (Werdeles Soares). E-Mail: gh05tb0y@disroot.org                          

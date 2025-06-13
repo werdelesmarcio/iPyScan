@@ -55,14 +55,10 @@ def grab_banner(target, port, timeout=0.1):
                 s.sendall(b"HELP\r\n")
             elif port in (53, 67, 68, 123):
                 s.sendall(b"\x00\x00\x00\x00")
-            elif port in (135, 139, 445):
+            elif port in (135, 139, 445, 1433, 1521,3306,5432):
                 s.sendall(b"\x00\x00\x00\x00\x00\x00\x00\x00")
             elif port in (161, 162):
                 s.sendall(b"\x30\x0c\x02\x01\x00\x04\x06public\x02\x01\x00")
-            elif port in (1433, 1521):
-                s.sendall(b"\x00\x00\x00\x00\x00\x00\x00\x00")
-            elif port in (3306, 5432):
-                s.sendall(b"\x00\x00\x00\x00\x00\x00\x00\x00")
             elif port in (6379, 11211):
                 s.sendall(b"*1\r\n$4\r\nPING\r\n")
             else:
