@@ -6,4 +6,4 @@ build:
   verbosity: minimal
 test_script:
 - sh: python3 -m pip install -r requirements.txt
-- sh: python3 ipyscan.py --target google.com --ports 1 100 --threads 100 --output json 
+- sh: python3 ipyscan.py --target google.com --ports 1-1000 --threads 100 --output json 
