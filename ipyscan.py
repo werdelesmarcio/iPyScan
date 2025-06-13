@@ -18,7 +18,7 @@ import sys
 import argparse
 
 # Imports do projeto
-from utils.banner import banner
+from utils.banner import banner as banner
 from scanner.network_utils import resolve_target, ResolutionError
 from scanner.port_scanner import scan_ports
 

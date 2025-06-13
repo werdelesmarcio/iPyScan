@@ -1,8 +1,3 @@
-#!/usr/bin/python3
-# -*- coding: utf-8 -*-
-
-# iPyscan Version 1.0.29 (beta)
-
 from datetime import datetime
 import time
 
