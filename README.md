@@ -94,11 +94,11 @@ ipyscan --target 127.0.0.1 --ports 20-80 --threads 100 --output json
 ---
 
 ## 💡 Roadmap de melhorias
-
 - [x] Banner grabbing com heurísticas por porta
 - [x] Testes automatizados com `unittest`
 - [x] Exportação JSON/CSV
 - [x] Ajuda CLI detalhada com `--help`
+- [x] Banner seguro com `subprocess`
 - [ ] Scan UDP
 - [ ] Modo silencioso `--quiet`
 - [ ] Interface web (Flask ou GUI)
