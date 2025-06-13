@@ -35,6 +35,10 @@ jobs:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
           command: python3 ipyscan.py --target google.com --ports 1-1000 --threads 100 --output json
+        
+      # Qlty Coverage Orb
+      #- qlty/coverage_publish:
+      #    files: coverage/coverage.json
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
