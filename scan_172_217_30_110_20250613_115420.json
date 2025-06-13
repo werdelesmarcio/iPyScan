@@ -1,0 +1,10 @@
+[
+    {
+        "port": 80,
+        "banner": null
+    },
+    {
+        "port": 443,
+        "banner": null
+    }
+]

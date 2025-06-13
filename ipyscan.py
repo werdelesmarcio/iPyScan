@@ -17,6 +17,7 @@ eficiente.
 import sys
 import argparse
 
+# Imports do projeto
 from utils.banner import banner
 from scanner.network_utils import resolve_target, ResolutionError
 from scanner.port_scanner import scan_ports
@@ -27,41 +28,43 @@ def parse_args():
     Função para analisar os argumentos de linha de comando.
     Retorna um objeto Namespace com os argumentos analisados.
     """
+    # Menu de ajuda e opções do software
+    # Define os argumentos que o software aceita
     parser = argparse.ArgumentParser(
         prog="iPyScan",
         description=(
-            "iPyScan - Scanner de portas TCP com banner grabbing e exportação.\n"
-            "Realiza varredura em hosts, identifica serviços e exporta em JSON ou CSV.\n"
+            "iPyScan - TCP port scanner with banner grabbing and export.\n"
+            "Scans hosts, identifies services and exports in JSON or CSV\n"
         ),
         epilog=(
-            "Desenvolvido por Werdeles Marcio de C. Soares"
-            "\nExemplos:\n"
+            "Developed by (gh05tb0y) Werdeles Soares"
+            "\nEx.:\n"
             "  ipyscan --target 127.0.0.1 --ports 20-80 --output json\n"
             "  ipyscan --target scanme.nmap.org --ports 1-1000 --threads 200 --output csv\n"
         ),
-        formatter_class=argparse.RawTextHelpFormatter
+        formatter_class=argparse.RawTextHelpFormatter,
     )
     parser.add_argument(
         "--target",
         required=True,
-        help="Hostname ou endereço IP do alvo a ser escaneado.",
+        help="Hostname or IP address of the target to be scanned.",
     )
     parser.add_argument(
         "--ports",
         required=True,
-        help="Intervalo de portas (ex.: 20-80).",
+        help="Port range (e.g. 20-80).",
     )
     parser.add_argument(
         "--threads",
         default=100,
         type=int,
-        help="Número de threads (defaut: 100).",
+        help="Number of threads (default: 100).",
     )
     parser.add_argument(
         "--output",
         choices=["json", "csv"],
         default="json",
-        help="Formato de saída (json ou csv, default: json).",
+        help="Output format (json or csv, default: json).",
     )
     return parser.parse_args()
 
@@ -83,9 +86,9 @@ def main():
         initial_port = int(port_range[0])
         final_port = int(port_range[1])
         if not (0 <= initial_port <= 65535 and 0 <= final_port <= 65535):
-            raise ValueError("Portas devem estar entre 0 e 65535.")
+            raise ValueError("Ports must be between 0 and 65535.")
     except ValueError as e:  # Captura erros de conversão de portas
-        print(f"Erro ao processar o intervalo de portas: {e}")
+        print(f"Error processing port range: {e}")
         sys.exit(1)
 
     scan_ports(

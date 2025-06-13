@@ -1,0 +1,10 @@
+[
+    {
+        "port": 80,
+        "banner": "HTTP/1.0 301 Moved Permanently"
+    },
+    {
+        "port": 443,
+        "banner": null
+    }
+]
