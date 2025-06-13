@@ -26,4 +26,9 @@ jobs:
         uses: codecov/codecov-action@v4
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          
+      - uses: qltysh/qlty-action/coverage@v1
+        with:
+          token: ${{secrets.QLTY_COVERAGE_TOKEN}}
+          files: reports/lcov.info
 
